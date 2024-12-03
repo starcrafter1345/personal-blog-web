@@ -1,12 +1,13 @@
 import express from "express";
 
+import { router as homeRoutes } from "./routes/home.mjs";
+import { router as adminRoutes } from "./routes/admin.mjs";
+
 const app = express();
 
 const PORT = 3000;
 
-app.use("/", (req, res) => {
-  res.send("<h1>Hello world</h1>");
-  res.end();
-});
+app.use("/", homeRoutes);
+app.use("/admin", adminRoutes);
 
 app.listen(PORT || 3000);
