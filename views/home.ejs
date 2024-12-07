@@ -10,17 +10,19 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <h1 class="header_h1"></h1>
+        <h1 class="header_h1">Personal Blog</h1>
         <a href="login"></a>
       </header>
-      
+
       <main class="main">
         <ul class="articles">
           <% articles.forEach(article => { %>
-            <li class="articles_item article">
-              <h3 class="article_title"><%= article.title %></h3>
-              <p class="article_date"><%= article.date %></p>
-            </li>
+            <a href="/article/<%= article.id %>">
+              <li class="articles_item article">
+                <h3 class="article_title"><%= article.title %></h3>
+                <p class="article_date"><%= new Date(article.date).toLocaleDateString() %></p>
+              </li>
+            </a>
           <% }) %>
         </ul>
       </main>

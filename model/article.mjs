@@ -4,7 +4,7 @@ import { arch } from "node:os";
 
 const ARTICLE_PATH = path.join(process.cwd(), "data", "articles");
 
-class Article {
+export class Article {
   async create(title, text) {
     const date = new Date();
     const id = Date.now();

@@ -1,4 +1,5 @@
 import express from "express";
+import { homeController } from "../controllers/home.mjs";
 
 export const router = express.Router();
 
@@ -6,10 +7,7 @@ router.get("/", (req, res) => {
   res.redirect("/home");
 });
 
-router.get("/home", (req, res) => {
-  res.send("<h1>Hello world</h1>");
-  res.end();
-});
+router.get("/home", homeController);
 
 router.get("/login", (req, res) => {});
 
