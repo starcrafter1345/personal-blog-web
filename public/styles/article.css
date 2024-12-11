@@ -1,0 +1,13 @@
+.header {
+    text-align: left;
+}
+
+.article {
+    display: flex;
+    flex-flow: column;
+
+    width: 400px;
+
+    margin: 0 12px 12px 12px;
+    gap: 12px;
+}

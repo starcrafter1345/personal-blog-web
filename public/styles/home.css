@@ -1,0 +1,22 @@
+.main {
+    text-align: center;
+}
+
+.articles {
+    display: inline-flex;
+    flex-direction: column;
+
+    row-gap: 12px;
+    padding: 12px;
+
+    align-items: center;
+
+    }
+
+.article {
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 400px;
+}

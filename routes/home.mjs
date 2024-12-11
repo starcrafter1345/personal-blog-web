@@ -1,5 +1,5 @@
 import express from "express";
-import { homeController } from "../controllers/home.mjs";
+import { articleController, homeController } from "../controllers/home.mjs";
 
 export const router = express.Router();
 
@@ -11,4 +11,4 @@ router.get("/home", homeController);
 
 router.get("/login", (req, res) => {});
 
-router.get("/article/:id", (req, res) => {});
+router.get("/article/:id", articleController);
