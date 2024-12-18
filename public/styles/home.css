@@ -10,13 +10,20 @@
     padding: 12px;
 
     align-items: center;
+}
 
-    }
-
-.article {
-    display: flex;
+.article,
+.article > a {
+    display: inline-flex;
 
     justify-content: space-between;
 
     width: 400px;
+}
+
+.article_controls {
+    display: flex;
+    flex-flow: row;
+
+    gap: 12px;
 }

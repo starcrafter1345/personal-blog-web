@@ -7,7 +7,7 @@
   </head>
   <body>
       <div class="wrapper">
-        <%- include("../includes/header", {title: title}) %>
+        <%- include("../includes/header", {title: title, admin: false}) %>
 
         <article class="article">
           <h1 class="article_date"><%= new Date(article.date).toLocaleDateString() %></h1>
