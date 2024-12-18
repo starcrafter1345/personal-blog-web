@@ -57,3 +57,7 @@ export async function update(id, title, text) {
 
   await fs.writeFile(path.join(ARTICLE_PATH, String(id)), json);
 }
+
+export async function remove(id) {
+  await fs.rm(path.join(ARTICLE_PATH, String(id)));
+}

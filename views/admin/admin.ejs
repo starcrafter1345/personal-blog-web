@@ -17,8 +17,8 @@
                 <h3 class="article_title"><%= article.title %></h3>
               </a>
               <nav class="article_controls">
-                <a class="article_control" href="/admin/edit/<%= article.id %>">Edit</a>
-                <a class="article_control" href="/admin/delete/<%= article.id %>">Detele</a>
+                <a class="article_control" data-method="delete" href="/admin/edit/<%= article.id %>">Edit</a>
+                <a class="article_control" href="/admin/delete/<%= article.id %>">Delete</a>
               </nav>
             </li>
           <% }) %>
