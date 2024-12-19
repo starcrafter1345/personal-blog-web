@@ -27,3 +27,29 @@ body {
 .header_h1 {
     font-size: 32px;
 }
+
+.form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.form_input {
+    width: 400px;
+
+    margin: 0px 12px;
+    padding: 12px;
+
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.form_btn {
+    padding: 12px;
+    margin-bottom: 12px;
+
+    border: 1px solid #000;
+    border-radius: 8px;
+}

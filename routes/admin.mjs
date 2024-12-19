@@ -1,5 +1,7 @@
 import express from "express";
 import {
+  addGetController,
+  addPostController,
   adminController,
   deleteController,
 } from "../controllers/adminController.mjs";
@@ -12,8 +14,8 @@ router.get("/edit/:id", (req, res) => {});
 
 router.post("edit/:id", (req, res) => {});
 
-router.get("/new", (req, res) => {});
+router.get("/new", addGetController);
 
-router.post("/new", (req, res) => {});
+router.post("/new", addPostController);
 
 router.get("/delete/:id", deleteController);

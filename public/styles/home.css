@@ -4,7 +4,7 @@
 
 .articles {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     row-gap: 12px;
     padding: 12px;
