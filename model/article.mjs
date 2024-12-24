@@ -14,9 +14,7 @@ export async function create(title, text) {
     date: date,
   };
 
-  const json = JSON.stringify(data);
-
-  await fs.writeFile(path.join(ARTICLE_PATH, String(id)), json);
+  await fs.writeFile(path.join(ARTICLE_PATH, String(id)), JSON.stringify(data));
 }
 
 export async function read(id) {
@@ -53,9 +51,7 @@ export async function update(id, title, text) {
     date: date,
   };
 
-  const json = JSON.stringify(data);
-
-  await fs.writeFile(path.join(ARTICLE_PATH, String(id)), json);
+  await fs.writeFile(path.join(ARTICLE_PATH, String(id)), JSON.stringify(data));
 }
 
 export async function remove(id) {

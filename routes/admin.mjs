@@ -4,19 +4,19 @@ import {
   addPostController,
   adminController,
   deleteController,
-  editGetController,
+  editGetController, editPostController,
 } from "../controllers/adminController.mjs";
 
 export const router = express.Router();
 
 router.get("/", adminController);
 
-router.get("/edit/:id", editGetController);
+router.route("/edit/:id")
+  .get(editGetController)
+  .post(editPostController);
 
-router.post("edit/:id", (req, res) => {});
-
-router.get("/new", addGetController);
-
-router.post("/new", addPostController);
+router.route("/new")
+  .get(addGetController)
+  .post(addPostController);
 
 router.get("/delete/:id", deleteController);
