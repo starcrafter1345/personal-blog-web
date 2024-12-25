@@ -12,6 +12,4 @@ router.get("/", (req, res) => {
 
 router.get("/home", homeController);
 
-router.get("/login", (req, res) => {});
-
 router.get("/article/:id", articleController);
