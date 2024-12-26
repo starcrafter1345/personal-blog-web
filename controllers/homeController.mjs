@@ -12,7 +12,6 @@ export async function articleController(req, res) {
   const article = await read(req.params["id"]);
 
   res.render("user/article", {
-    title: article.title,
     article: article,
   });
 }

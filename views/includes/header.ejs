@@ -1,8 +1,10 @@
 <header class="header">
   <h1 class="header_h1"><%= title %></h1>
-  <% if (admin) { %>
+  <% if (mode == "Admin") { %>
     <a href="/admin/new">+Add</a>
-  <%} else {%>
+  <% } else if (mode == "Home") {%>
     <a href="/admin">Log in</a>
+  <% } else if (mode == "None") { %>
+    <div></div>
   <% } %>
 </header>

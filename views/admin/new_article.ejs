@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <%- include("../includes/header", {title: "New Article", admin: true}) %>
+      <%- include("../includes/header", {title: "New Article", mode: "None"}) %>
 
       <form class="form" action="/admin/new" method="post">
         <input class="form_input" name="title" type="text" placeholder="Article title">
