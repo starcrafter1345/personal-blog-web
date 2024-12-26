@@ -1,7 +1,33 @@
 # personal-blog-web
 
-# How to run
+## How to run
 
-1. Clone repository `git clone https://github.com/starcrafter1345/personal-blog-web.git`
-2. Run command `npm i`
-3. Then, run `npm start`
+1. Clone repository:
+  
+   ```bash
+   git clone https://github.com/starcrafter1345/personal-blog-web.git
+   cd personal-blog-web
+   ```
+   
+3. Run command:
+   
+   ```bash
+   npm i
+   ```
+   
+5. Then, run:
+   
+   ```bash
+   npm start
+   ```
+   
+## Navigation
+
+- **/home** - Main page for user
+- **/article/:id** - Page for reading article
+- **/admin** - Main page for admin
+- **/admin/new** - Page for making new article
+- **/admin/edit/:id** - Page for editing article
+
+## CC
+https://roadmap.sh/projects/personal-blog
